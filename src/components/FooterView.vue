@@ -1,10 +1,12 @@
 <template>
-    <footer>
-        <p>&copy; Ricardo Guevara 2022</p>
-    </footer>
+  <footer>
+    <div class="margin-wrap">
+      <p>&copy; Ricardo Guevara 2022</p>
+    </div>
+  </footer>
 </template>
 <script>
 export default {
-    name:'FooterView'
-}
+  name: "FooterView",
+};
 </script>

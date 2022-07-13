@@ -26,13 +26,15 @@ body {
   margin: 0;
 }
 #app {
-  /*box-sizing: border-box;*/
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  width: 95%;
-  max-width: 1400px;
+  width: 100%;
   min-height: 100vh;
+}
+.margin-wrap {
+	margin: 0 5%;
 }
 li {
   flex: 1;
@@ -52,18 +54,24 @@ header a {
   color: #fff;
 }
 main {
-  display: flex;
+  /*display: flex;*/
   flex: 1 1 auto;
-  background-color: #c0d7e4;
+  /*background-color: #c0d7e4;*/
+}
+.main_content {
+	display: flex;
+	margin: 0 5%;
 }
 section {
   width: 70%;
-  background-color: #ced3e1;
+  margin-top: 2%;
+  
 }
 article {
   margin: 2% 1% 2% 2%;
 }
 aside {
+  margin-top: 2%;
   width: 30%;
 }
 aside > div {
@@ -75,7 +83,7 @@ footer p {
   text-align: center;
   color: #fff;
 }
-header {
+header > div{
   padding: 2% 0;
   display: flex;
   justify-content: center;
@@ -84,7 +92,7 @@ header {
 header .logo {
   flex: 1;
   color: #00c7f1;
-  margin-left: 2%;
+  
 }
 header nav {
   flex: 3;
@@ -103,6 +111,12 @@ nav a.router-link-exact-active {
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   .wrapper {
     width: 100%;
+  }
+  .margin-wrap, .main_content{
+    margin: 0 2%;
+  }
+  .main_content{
+    flex-direction: column;
   }
   header,
   section,

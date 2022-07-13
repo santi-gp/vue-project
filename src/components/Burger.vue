@@ -1,6 +1,6 @@
 <template>
-  <div class="showBurger" @click="isRotate = !isRotate">
-    <div class="burger1" v-if="!isRotate">
+  <div class="showBurger" @click="isOpen = !isOpen">
+    <div class="burger1" v-if="!isOpen">
       <div></div>
       <div></div>
       <div></div>
@@ -11,7 +11,7 @@
       <div></div>
     </div>
   </div>
-  <nav :class="isRotate ? 'closeNav' : 'nav'">
+  <nav :class="isOpen ? 'closeNav' : 'nav'">
     <ul>
       <li><router-link to="/">Inicio</router-link></li>
       <li><router-link to="/about">About</router-link></li>
@@ -24,7 +24,7 @@ export default {
   name: "Burger",
   data() {
     return {
-      isRotate: false,
+      isOpen: false,
     };
   },
 };
@@ -42,6 +42,9 @@ export default {
     flex-direction: column;
     background-color: #00c7f1;
   }
+  ul li{
+    margin: 2% 0;
+  }
   ul a {
     color: #1d213a;
   }
@@ -49,7 +52,6 @@ export default {
     left: 0;
   }
   .showBurger {
-    margin-right: 2%;
     width: 35px;
     height: max-content;
     cursor: pointer;
