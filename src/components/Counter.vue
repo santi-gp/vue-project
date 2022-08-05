@@ -7,7 +7,7 @@
         <strong> {{ count }} </strong>
         <button @click="increment">+</button>
       </div>
-      <button class="reset" @click="reset" >Reset</button>
+      <button class="reset" @click="reset">Reset</button>
     </div>
   </div>
 </template>
@@ -26,16 +26,15 @@ export default {
     decrement() {
       this.count--;
     },
-    reset(){
-      this.count=0;
-    }
+    reset() {
+      this.count = 0;
+    },
   },
 };
 </script>
 <style>
 .styleCounter {
   width: 50%;
-  margin: 0 auto;
   padding: 2%;
   background-color: #00c7f1;
   border-radius: 5px;
@@ -50,15 +49,14 @@ export default {
   justify-content: space-between;
   align-items: center;
 }
-button {
+.styleCounter button {
   background-color: #1d213a;
   color: #fff;
   border: none;
-  padding: .5rem;
+  padding: 0.5rem;
 }
-.reset{
+.reset {
   width: fit-content;
-  
   margin: 0 auto;
 }
 </style>

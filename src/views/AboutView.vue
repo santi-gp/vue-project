@@ -1,13 +1,13 @@
 <template>
   <section>
-    <h2>About</h2>
+    <h1>hola</h1>
     <article>
       <router-view />
     </article>
   </section>
   <aside>
-    <Accordion title="Accordion">
-      <router-link to="/about/aboutInfo">About Info</router-link>
+    <Accordion title="Formularios">
+      <router-link to="/about/aboutInfo">Formulario Simple</router-link>
     </Accordion>
   </aside>
 </template>

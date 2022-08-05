@@ -1,6 +1,5 @@
 <template>
   <section>
-    <h2>Contacto</h2>
     <article>
       <staff/>
     </article>
